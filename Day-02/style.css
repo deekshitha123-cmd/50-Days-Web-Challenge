@@ -1,0 +1,49 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 30px;
+}
+
+/* Card */
+.card {
+    width: 400px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 20px;
+}
+
+/* Button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
