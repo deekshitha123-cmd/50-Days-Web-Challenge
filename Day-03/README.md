@@ -64,19 +64,7 @@ Day-03-Flexbox/
 - flex-direction
 - gap
 
----
 
-## 📸 Preview
-
-(Add your screenshot here)
-
----
-
-## 🔗 GitHub Repository
-
-(Add your GitHub Link)
-
----
 
 ## 🚀 Learning Outcome
 
