@@ -1,0 +1,196 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#eef5ff,#f8fbff);
+    color:#333;
+}
+
+/* Team Section */
+
+#team{
+    padding:80px 20px;
+    text-align:center;
+}
+
+#team h2{
+    font-size:42px;
+    color:#1e293b;
+    margin-bottom:10px;
+}
+
+/* Subtitle */
+
+.team-subtitle{
+    color:#64748b;
+    font-size:18px;
+    margin-bottom:50px;
+}
+
+/* Grid */
+
+.team-grid{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+/* Card */
+
+.profile-card{
+    background:#ffffff;
+    width:320px;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    overflow:hidden;
+    text-align:center;
+    transition:all 0.4s ease;
+    animation:fadeUp 0.8s ease forwards;
+    opacity:0;
+}
+
+/* Card Hover */
+
+.profile-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 18px 35px rgba(37,99,235,0.25);
+}
+
+/* Image */
+
+.profile-card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:5px solid #2563eb;
+    transition:0.4s;
+}
+
+/* Image Hover */
+
+.profile-card:hover img{
+    transform:rotate(5deg) scale(1.08);
+}
+
+/* Name */
+
+.profile-card h3{
+    font-size:24px;
+    margin-bottom:10px;
+    color:#1e293b;
+}
+
+/* Role */
+
+.role{
+    color:#2563eb;
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+/* Description */
+
+.description{
+    color:#64748b;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+/* Social Icons */
+
+.social-icons{
+    margin-bottom:20px;
+}
+
+.social-icons a{
+    color:#2563eb;
+    font-size:22px;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#1d4ed8;
+    transform:scale(1.2);
+}
+
+/* Button */
+
+.profile-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.profile-btn:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Animation Delay */
+
+.profile-card:nth-child(1){
+    animation-delay:0.2s;
+}
+
+.profile-card:nth-child(2){
+    animation-delay:0.4s;
+}
+
+.profile-card:nth-child(3){
+    animation-delay:0.6s;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+.team-grid{
+    flex-direction:column;
+}
+
+#team h2{
+    font-size:34px;
+}
+
+.profile-card{
+    width:90%;
+}
+
+}
