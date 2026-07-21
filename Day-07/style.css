@@ -1,0 +1,215 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Root Colors */
+
+:root{
+
+    --primary-color:#2563eb;
+    --primary-hover:#1d4ed8;
+
+    --border:#cccccc;
+    --background:#f4f6f9;
+    --white:#ffffff;
+
+    --text:#333333;
+
+}
+
+/* Body */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:var(--background);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+/* Form Card */
+
+.container{
+
+    width:100%;
+    max-width:500px;
+
+    background:var(--white);
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.container h1{
+
+    text-align:center;
+    margin-bottom:10px;
+
+}
+
+.container p{
+
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+
+}
+
+/* Form Groups */
+
+.form-group{
+
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+/* Labels */
+
+label{
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+/* Inputs */
+
+input,
+textarea{
+
+    padding:12px 15px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+/* Focus State */
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 5px rgba(37,99,235,.3);
+
+}
+
+/* Valid State */
+
+input:valid{
+
+    border-color:green;
+
+}
+
+/* Invalid State */
+
+input:invalid{
+
+    border-color:red;
+
+}
+
+/* Avoid red border before typing */
+
+input:placeholder-shown{
+
+    border-color:var(--border);
+
+}
+
+/* Textarea */
+
+textarea{
+
+    resize:vertical;
+
+}
+
+/* Submit Button */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+    transition:.3s;
+
+}
+
+/* Hover State */
+
+button:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* Disabled State */
+
+button:disabled{
+
+    background:#bdbdbd;
+
+    cursor:not-allowed;
+
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.container{
+
+    padding:25px;
+
+}
+
+}

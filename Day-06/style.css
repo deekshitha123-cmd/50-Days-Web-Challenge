@@ -1,6 +1,6 @@
-/* ==========================
+/* 
    RESET
-========================== */
+*/
 
 * {
     margin: 0;
@@ -8,9 +8,9 @@
     box-sizing: border-box;
 }
 
-/* ==========================
+/* 
    BODY
-========================== */
+*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -19,9 +19,9 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================
+/* 
    NAVIGATION
-========================== */
+*/
 
 nav {
     display: flex;
@@ -58,9 +58,9 @@ nav ul li a:hover {
     color: #ffeb3b;
 }
 
-/* ==========================
+/* 
    HERO SECTION
-========================== */
+ */
 
 .hero {
     text-align: center;
@@ -83,9 +83,9 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* ==========================
+/* 
    INITIATIVES SECTION
-========================== */
+*/
 
 .initiatives {
     padding: 60px 80px;
@@ -98,9 +98,9 @@ nav ul li a:hover {
     color: #0d47a1;
 }
 
-/* ==========================
+/* 
    GRID
-========================== */
+*/
 
 .initiatives-grid {
     display: grid;
@@ -108,9 +108,9 @@ nav ul li a:hover {
     gap: 30px;
 }
 
-/* ==========================
+/* 
    CARD
-========================== */
+ */
 
 .card {
     background: white;
@@ -133,9 +133,9 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* ==========================
+/* 
    TABLET VIEW
-========================== */
+*/
 
 @media (max-width: 900px) {
 
@@ -160,9 +160,9 @@ nav ul li a:hover {
     }
 }
 
-/* ==========================
+/* 
    MOBILE VIEW
-========================== */
+ */
 
 @media (max-width: 600px) {
 
