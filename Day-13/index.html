@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synexus Community Platform - Day 13</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Synexus
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle"
+                aria-label="Toggle Navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#initiatives">Initiatives</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Welcome to Synexus Community
+            </h1>
+
+            <p>
+                Learn. Build. Collaborate. Grow together with developers from
+                different domains and create impactful software solutions.
+            </p>
+
+            <a href="#join" class="btn">
+                Become a Member
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Synexus Community is a collaborative platform where students,
+            developers, and technology enthusiasts work together on innovative
+            projects, participate in workshops, and strengthen their technical
+            skills through real-world experience.
+        </p>
+
+    </section>
+
+    <!-- ================= INITIATIVES ================= -->
+
+    <section class="initiatives" id="initiatives">
+
+        <h2>Our Initiatives</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                    alt="Coding Workshop">
+                <h3>Workshops</h3>
+                <p>
+                    Hands-on technical workshops covering Web Development,
+                    AI, Cloud Computing and more.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600"
+                    alt="Hackathon">
+                <h3>Hackathons</h3>
+                <p>
+                    Build innovative solutions by collaborating with talented
+                    developers.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600"
+                    alt="Team Collaboration">
+                <h3>Community</h3>
+                <p>
+                    Connect with mentors, peers, and industry experts through
+                    community events.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TEAM ================= -->
+
+    <section class="team" id="team">
+
+        <h2>Core Team</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80"
+                    alt="Community Lead">
+
+                <h3>Deekshitha HS</h3>
+
+                <p>
+                    Full stack Developer
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Frontend Developer"
+                    alt="Technical Lead">
+
+                <h3>Greeshma</h3>
+
+                <p>
+                    Frontend Developer
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"
+                    alt="Event Coordinator">
+
+                <h3>Alex</h3>
+
+                <p>
+                    UI/UX Designer
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= JOIN FORM ================= -->
+
+    <section class="join" id="join">
+
+        <h2>Membership Application</h2>
+
+        <form id="membershipForm" novalidate>
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name">
+
+                <small class="error-message" id="nameError"></small>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email">
+
+                <small class="error-message" id="emailError"></small>
+
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Submit Application
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Synexus Community. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
