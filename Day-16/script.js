@@ -4,9 +4,9 @@
 ===================================== */
 
 
-/* =====================================
+/* 
    SELECT HTML ELEMENTS
-===================================== */
+ */
 
 const membershipForm =
   document.getElementById("membershipForm");
@@ -24,9 +24,9 @@ const successMessage =
   document.getElementById("successMessage");
 
 
-/* =====================================
+/* 
    LOCALSTORAGE KEY
-===================================== */
+*/
 
 const storageKey =
   "synexus_form_draft";
