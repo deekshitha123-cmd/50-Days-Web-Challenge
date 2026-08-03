@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Synexus Initiatives Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="header">
+
+```
+<div class="logo">
+  Synexus<span>Community</span>
+</div>
+
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#initiatives">Initiatives</a>
+  <a href="#about">About</a>
+</nav>
+```
+
+  </header>
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+
+  <main>
+
+```
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <p class="tag">
+      BUILD • LEARN • CONNECT
+    </p>
+
+    <h1>
+      Discover Community
+      <span>Initiatives</span>
+    </h1>
+
+    <p>
+      Explore innovative projects created by the
+      Synexus community.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     INITIATIVES SECTION
+========================== -->
+
+<section
+  class="initiatives-section"
+  id="initiatives"
+>
+
+  <div class="section-heading">
+
+    <p class="section-tag">
+      COMMUNITY PROJECTS
+    </p>
+
+    <h2>
+      Explore Our Initiatives
+    </h2>
+
+    <p>
+      Search and discover projects created by
+      our growing community.
+    </p>
+
+  </div>
+
+
+  <!-- SEARCH BAR -->
+
+  <div class="search-container">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search projects..."
+    >
+
+  </div>
+
+
+  <!-- PROJECT GRID -->
+
+  <div
+    class="projects-grid"
+    id="gridContainer"
+  >
+
+    <!-- JavaScript will render cards here -->
+
+  </div>
+
+
+  <!-- EMPTY STATE -->
+
+  <p
+    class="empty-message"
+    id="emptyMessage"
+  >
+    No projects found.
+  </p>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section
+  class="about-section"
+  id="about"
+>
+
+  <h2>
+    Learn. Build. Grow.
+  </h2>
+
+  <p>
+    Synexus brings students and developers
+    together to learn modern technologies,
+    build projects, and grow as engineers.
+  </p>
+
+</section>
+```
+
+  </main>
+
+  <!-- =========================
+       MODAL
+       Outside the main tag
+  ========================== -->
+
+  <div
+    class="modal-overlay"
+    id="modalOverlay"
+  >
+
+```
+<div
+  class="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+>
+
+  <!-- CLOSE BUTTON -->
+
+  <button
+    class="close-btn"
+    id="closeModal"
+    aria-label="Close modal"
+  >
+    &times;
+  </button>
+
+
+  <!-- MODAL CONTENT -->
+
+  <p class="modal-tag">
+    PROJECT DETAILS
+  </p>
+
+  <h2 id="modalTitle">
+    Project Title
+  </h2>
+
+  <p id="modalDescription">
+    Project information will appear here.
+  </p>
+
+
+  <button
+    class="modal-action"
+    id="modalAction"
+  >
+    Explore Project
+  </button>
+
+</div>
+```
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
