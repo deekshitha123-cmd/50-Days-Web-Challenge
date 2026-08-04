@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
+
+  <title>
+    Day 20 | Stateful Task Tracker
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="header">
+
+```
+<div class="logo">
+  Synexus<span>Tasks</span>
+</div>
+
+<p>
+  Day 20 – Stateful UI Architecture
+</p>
+```
+
+  </header>
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main>
+
+```
+<!-- =========================
+     TASK TRACKER
+========================== -->
+
+<section class="task-section">
+
+  <div class="task-container">
+
+    <!-- HEADING -->
+
+    <div class="task-heading">
+
+      <p class="day-label">
+        DAY 20 / 50
+      </p>
+
+      <h1>
+        Task Tracker
+      </h1>
+
+      <p>
+        Organize your daily goals,
+        track progress, and stay
+        consistent.
+      </p>
+
+    </div>
+
+
+    <!-- TASK INPUT -->
+
+    <div class="task-input-container">
+
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Enter a new task..."
+        autocomplete="off"
+      >
+
+      <button
+        id="add-task-btn"
+      >
+        + Add Task
+      </button>
+
+    </div>
+
+
+    <!-- TASK STATISTICS -->
+
+    <div class="task-stats">
+
+      <div class="stat-card">
+
+        <span id="total-tasks">
+          0
+        </span>
+
+        <p>
+          Total Tasks
+        </p>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <span id="completed-tasks">
+          0
+        </span>
+
+        <p>
+          Completed
+        </p>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <span id="remaining-tasks">
+          0
+        </span>
+
+        <p>
+          Remaining
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- TASK LIST -->
+
+    <ul
+      id="task-list"
+    >
+
+      <!-- Tasks are rendered
+           dynamically -->
+
+    </ul>
+
+
+    <!-- EMPTY STATE -->
+
+    <div
+      class="empty-state"
+      id="empty-state"
+    >
+
+      <div class="empty-icon">
+        📋
+      </div>
+
+      <h3>
+        No tasks yet
+      </h3>
+
+      <p>
+        Add your first task and
+        start making progress!
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+```
+
+  </main>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
