@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 23 - Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📋 Kanban Task Board</h1>
+    <p>HTML5 Drag & Drop API</p>
+</header>
+
+<div class="board">
+
+    <div class="column">
+        <h2>📝 To Do</h2>
+
+        <div class="task-card" draggable="true">
+            Design Landing Page
+        </div>
+
+        <div class="task-card" draggable="true">
+            Complete JavaScript Practice
+        </div>
+
+        <div class="task-card" draggable="true">
+            Prepare Interview Questions
+        </div>
+
+    </div>
+
+    <div class="column">
+        <h2>⚡ In Progress</h2>
+    </div>
+
+    <div class="column">
+        <h2>✅ Done</h2>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
