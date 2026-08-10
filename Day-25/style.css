@@ -1,0 +1,643 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: #111827;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.logo span {
+    color: #60a5fa;
+}
+
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-link {
+    color: #d1d5db;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #1f2937;
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1e3a8a
+    );
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 750px;
+}
+
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    background: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 70px);
+    margin-bottom: 20px;
+}
+
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #dbeafe;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+.btn-secondary {
+    background: white;
+    color: #1d4ed8;
+    margin-left: 10px;
+}
+
+
+.btn-secondary:hover {
+    background: #dbeafe;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+    width: min(1100px, 90%);
+    margin: auto;
+
+    padding: 70px 0;
+
+    min-height: 75vh;
+}
+
+
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+.page-header p {
+    color: #6b7280;
+    font-size: 17px;
+}
+
+
+.kanban-header {
+    margin-top: 70px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+
+.card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+
+.project-card {
+    border-left: 5px solid #2563eb;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+.about-box p {
+    line-height: 1.8;
+
+    color: #4b5563;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   KANBAN
+========================= */
+
+.add-task-area {
+    display: flex;
+
+    gap: 10px;
+
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+}
+
+
+.add-task-area input {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+.kanban-board {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.kanban-column {
+    background: #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    min-height: 350px;
+}
+
+
+.kanban-column h2 {
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+
+.task-list {
+    min-height: 250px;
+}
+
+
+.task-card {
+    background: white;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+
+    cursor: grab;
+}
+
+
+.task-card:active {
+    cursor: grabbing;
+}
+
+
+.dragging {
+    opacity: 0.5;
+}
+
+
+.empty-message {
+    text-align: center;
+
+    color: #6b7280;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.observe {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: 0.6s ease;
+}
+
+
+.observe.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   404
+========================= */
+
+.error-page {
+    min-height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+.error-page h1 {
+    font-size: 100px;
+
+    color: #2563eb;
+}
+
+
+.error-page h2 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.error-page p {
+    color: #6b7280;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #111827;
+
+    color: #9ca3af;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+
+body.dark-mode .card,
+body.dark-mode .about-box {
+    background: #1e293b;
+    color: #e5e7eb;
+}
+
+
+body.dark-mode .card p,
+body.dark-mode .about-box p,
+body.dark-mode .page-header p {
+    color: #cbd5e1;
+}
+
+
+body.dark-mode .kanban-column {
+    background: #1e293b;
+}
+
+
+body.dark-mode .task-card {
+    background: #334155;
+    color: white;
+}
+
+
+body.dark-mode .add-task-area input {
+    background: #1e293b;
+
+    color: white;
+
+    border-color: #475569;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    #main-nav {
+        display: none;
+        width: 100%;
+    }
+
+
+    #main-nav.active {
+        display: block;
+    }
+
+
+    .nav-menu {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+
+        padding-top: 15px;
+    }
+
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .kanban-board {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .btn-secondary {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    .add-task-area {
+        flex-direction: column;
+    }
+
+}
