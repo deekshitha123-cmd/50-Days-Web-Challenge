@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DevSpace | GitHub Developer Lookup</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            DevSpace
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#github-lookup">Contributors</a>
+        </nav>
+
+    </header>
+
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Community Contributor Lookup
+                </h1>
+
+                <p>
+                    Search for a GitHub developer and
+                    explore their latest open-source projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="github-lookup"
+            class="github-section"
+        >
+
+            <div class="section-container">
+
+                <h2>
+                    Find a GitHub Developer
+                </h2>
+
+                <p class="section-description">
+                    Enter a GitHub username to fetch their
+                    profile and latest repositories.
+                </p>
+
+
+                <div class="github-search">
+
+                    <input
+                        type="text"
+                        id="github-username"
+                        placeholder="Enter GitHub username"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="search-dev-btn"
+                    >
+                        Lookup
+                    </button>
+
+                </div>
+
+
+                <div id="status-message"></div>
+
+
+                <div id="dev-profile-card"></div>
+
+
+                <div class="repositories-section">
+
+                    <h2>
+                        Latest Projects
+                    </h2>
+
+                    <div
+                        id="repos-grid"
+                        class="initiatives-grid"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Day 27/50 Web Development Challenge
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
