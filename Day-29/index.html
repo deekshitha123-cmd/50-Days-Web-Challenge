@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevSpace | Day 29 - POST Requests</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            DevSpace
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Community</a>
+            <a href="#">Repositories</a>
+            <a href="#proposal">Propose</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="day-label">
+                    DAY 29 / 50
+                </p>
+
+                <h1>
+                    Community
+                    <span>Initiatives</span>
+                </h1>
+
+                <p>
+                    Have an idea that can help the developer community?
+                    Propose your initiative and send it directly to our server.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROPOSAL FORM
+        ========================== -->
+
+        <section class="proposal-section" id="proposal">
+
+            <div class="proposal-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        COMMUNITY CONTRIBUTION
+                    </p>
+
+                    <h2>
+                        Propose an Initiative
+                    </h2>
+
+                    <p>
+                        Share your technical idea with the community.
+                        Your proposal will be transmitted to the server
+                        using a POST request.
+                    </p>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <form id="proposal-form">
+
+                    <!-- TITLE -->
+
+                    <div class="form-group">
+
+                        <label for="title">
+                            Initiative Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            placeholder="Enter initiative title"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- DESCRIPTION -->
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="6"
+                            placeholder="Describe your technical initiative..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT BUTTON -->
+
+                    <button
+                        type="submit"
+                        id="submit-btn"
+                    >
+                        Submit Proposal
+                    </button>
+
+                </form>
+
+
+                <!-- SUCCESS / ERROR MESSAGE -->
+
+                <div
+                    id="message"
+                    class="message"
+                    role="alert"
+                ></div>
+
+
+                <!-- SERVER RESPONSE -->
+
+                <div
+                    id="response-box"
+                    class="response-box"
+                >
+
+                    <h3>
+                        Server Response
+                    </h3>
+
+                    <pre id="response-data"></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Day 29 / 50 Web Development Challenge
+        </p>
+
+        <p>
+            Built with Vanilla JavaScript & Fetch API
+        </p>
+
+    </footer>
+
+</body>
+</html>
