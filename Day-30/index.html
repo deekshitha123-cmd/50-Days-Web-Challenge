@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DevSpace | Day 30 - Full CRUD</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            DevSpace
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#proposal">Propose</a>
+            <a href="#manage">Manage</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="day-label">
+                DAY 30 / 50
+            </p>
+
+            <h1>
+                Full
+                <span>CRUD</span>
+                Operations
+            </h1>
+
+            <p>
+                Create, Read, Update and Delete data using
+                the native JavaScript Fetch API.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <!-- =========================
+             PROPOSAL FORM
+        ========================== -->
+
+        <section
+            class="proposal-section"
+            id="proposal"
+        >
+
+            <div class="proposal-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        CREATE
+                    </p>
+
+                    <h2>
+                        Propose an Initiative
+                    </h2>
+
+                    <p>
+                        Submit a new technical initiative
+                        to the server.
+                    </p>
+
+                </div>
+
+
+                <form id="proposal-form">
+
+                    <div class="form-group">
+
+                        <label for="title">
+                            Initiative Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            placeholder="Enter initiative title"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="6"
+                            placeholder="Describe your initiative..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        id="submit-btn"
+                    >
+                        Submit Proposal
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="message"
+                    class="message"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MANAGE PROPOSAL
+        ========================== -->
+
+        <section
+            class="manage-section"
+            id="manage"
+        >
+
+            <div class="proposal-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        UPDATE / DELETE
+                    </p>
+
+                    <h2>
+                        Manage Proposal
+                    </h2>
+
+                    <p>
+                        Update or delete an existing
+                        initiative using its API ID.
+                    </p>
+
+                </div>
+
+
+                <!-- ID INPUT -->
+
+                <div class="form-group">
+
+                    <label for="proposal-id">
+                        Proposal ID
+                    </label>
+
+                    <input
+                        type="number"
+                        id="proposal-id"
+                        value="1"
+                        min="1"
+                    >
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="manage-buttons">
+
+                    <button
+                        id="update-btn"
+                        type="button"
+                    >
+                        Update Proposal
+                    </button>
+
+
+                    <button
+                        id="delete-btn"
+                        class="btn-danger"
+                        type="button"
+                    >
+                        Delete Proposal
+                    </button>
+
+                </div>
+
+
+                <!-- RESPONSE -->
+
+                <div
+                    id="response-box"
+                    class="response-box"
+                >
+
+                    <h3>
+                        Server Response
+                    </h3>
+
+                    <pre id="response-data"></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Day 30 / 50 Web Development Challenge
+        </p>
+
+        <p>
+            Built with Vanilla JavaScript & Fetch API
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
