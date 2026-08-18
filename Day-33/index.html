@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GitHub User Cache</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main class="container">
+
+        <h1>GitHub User Search</h1>
+
+        <p class="subtitle">
+            Day 33 - Client-Side Data Caching
+        </p>
+
+
+        <!-- SEARCH FORM -->
+
+        <form id="searchForm">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter GitHub username"
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+
+        <!-- LOADER -->
+
+        <div id="loader" class="loader hidden">
+
+            Loading...
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div id="message" class="message"></div>
+
+
+        <!-- USER RESULT -->
+
+        <section id="userContainer"></section>
+
+    </main>
+
+
+    <!-- JavaScript Module -->
+
+    <script
+        type="module"
+        src="app.js"
+    ></script>
+
+</body>
+
+</html>
