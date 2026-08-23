@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Day 36 - Deep Linking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🔗 GitHub User Search</h1>
+
+        <p class="subtitle">
+            Search for a GitHub profile and share the URL.
+        </p>
+
+
+        <!-- SEARCH FORM -->
+
+        <form id="search-form">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Enter GitHub username"
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+
+        <!-- ERROR -->
+
+        <p id="error-message"></p>
+
+
+        <!-- RESULT -->
+
+        <section id="result"></section>
+
+    </main>
+
+
+    <script 
+        type="module" 
+        src="main.js"
+    ></script>
+
+</body>
+
+</html>
