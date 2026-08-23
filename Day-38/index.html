@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real-Time WebSocket Terminal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>⚡ Real-Time WebSocket Terminal</h1>
+            <p>Day 38 — Bidirectional Data Streaming</p>
+        </header>
+
+
+        <!-- Connection Status -->
+
+        <div class="status-box">
+
+            <span id="status-dot"></span>
+
+            <span id="connection-status">
+                Connecting...
+            </span>
+
+        </div>
+
+
+        <!-- Live Feed -->
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span>LIVE FEED</span>
+                <span>WebSocket</span>
+            </div>
+
+            <div id="live-feed">
+
+                <div class="system-message">
+                    Waiting for WebSocket connection...
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Message Input -->
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="ws-input"
+                placeholder="Type a message..."
+                autocomplete="off"
+            >
+
+            <button id="ws-send">
+                Send
+            </button>
+
+        </div>
+
+
+        <button id="clear-btn">
+            Clear Feed
+        </button>
+
+    </div>
+
+
+    <script
+        type="module"
+        src="main.js">
+    </script>
+
+</body>
+
+</html>

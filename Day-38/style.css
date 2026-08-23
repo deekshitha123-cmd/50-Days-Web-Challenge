@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101114;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #aaa;
+}
+
+
+/* STATUS */
+
+.status-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 15px;
+
+    background: #191b20;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+#status-dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #e74c3c;
+}
+
+#status-dot.connected {
+    background: #2ecc71;
+}
+
+
+/* TERMINAL */
+
+.terminal {
+    background: #08090b;
+
+    border: 1px solid #303238;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+/* TERMINAL HEADER */
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 14px 18px;
+
+    background: #1d2025;
+
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+/* LIVE FEED */
+
+#live-feed {
+    height: 450px;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+
+/* MESSAGES */
+
+.message {
+    margin-bottom: 15px;
+
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    max-width: 80%;
+}
+
+.message strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 13px;
+}
+
+.message span {
+    color: #ddd;
+}
+
+
+/* SENT */
+
+.message.sent {
+    margin-left: auto;
+
+    background: #243b55;
+}
+
+
+/* RECEIVED */
+
+.message.received {
+    background: #1f3a2c;
+}
+
+
+/* SYSTEM */
+
+.message.system {
+    background: #25262a;
+
+    max-width: 100%;
+}
+
+.message.system strong {
+    color: #aaa;
+}
+
+
+/* INPUT */
+
+.input-area {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.input-area input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1d2025;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.input-area button,
+#clear-btn {
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 14px 22px;
+
+    cursor: pointer;
+
+    background: #3498db;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+.input-area button:hover,
+#clear-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* CLEAR */
+
+#clear-btn {
+    margin-top: 12px;
+
+    background: #555;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    #live-feed {
+        height: 350px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    .input-area button {
+        width: 100%;
+    }
+
+    .message {
+        max-width: 95%;
+    }
+}
