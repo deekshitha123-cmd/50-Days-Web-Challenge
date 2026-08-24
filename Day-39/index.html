@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Offline PWA - Day 39</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="icon">📡</div>
+
+            <h1>Offline-First App</h1>
+
+            <p>
+                Day 39 — Service Workers & Offline Architecture
+            </p>
+        </header>
+
+
+        <main>
+
+            <section class="status-card">
+
+                <div class="status-icon">
+                    🟢
+                </div>
+
+                <div>
+                    <h2 id="status">
+                        Checking connection...
+                    </h2>
+
+                    <p id="status-text">
+                        Please wait while we check your network.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="content-card">
+
+                <h2>🚀 Service Worker Active</h2>
+
+                <p>
+                    This page is designed to work even when
+                    the internet connection is unavailable.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <span>📦</span>
+                        <div>
+                            <h3>Cached Assets</h3>
+                            <p>
+                                Core files are stored locally.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>⚡</span>
+                        <div>
+                            <h3>Fast Loading</h3>
+                            <p>
+                                Cached files load instantly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>📴</span>
+                        <div>
+                            <h3>Offline Support</h3>
+                            <p>
+                                The application works without internet.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="test-card">
+
+                <h2>🧪 Test Offline Mode</h2>
+
+                <p>
+                    Open DevTools → Network → select
+                    <strong>Offline</strong> and refresh the page.
+                </p>
+
+                <button id="testBtn">
+                    Test Service Worker
+                </button>
+
+                <p id="result"></p>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            <p>
+                Built with Vanilla JavaScript + Service Worker 🚀
+            </p>
+        </footer>
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
