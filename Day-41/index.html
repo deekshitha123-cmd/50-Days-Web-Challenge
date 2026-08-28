@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Worker Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Web Workers Demo</h1>
+
+        <!-- Animated Ball -->
+        <div class="ball"></div>
+
+        <p>
+            The ball keeps moving while the heavy calculation
+            runs in the background.
+        </p>
+
+        <button id="process-btn">
+            Run Heavy Process
+        </button>
+
+        <button id="cancel-btn">
+            Cancel Process
+        </button>
+
+        <p id="status">Ready</p>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
