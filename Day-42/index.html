@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 42 - Web Components</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Team</h1>
+        <p>Reusable User Cards using Web Components</p>
+    </header>
+
+    <main>
+        <div class="cards-container">
+
+            <user-card
+                name="Deekshitha"
+                role="Lead Engineer">
+            </user-card>
+
+            <user-card
+                name="Greeshma"
+                role="Frontend Developer">
+            </user-card>
+
+            <user-card
+                name="Chandler "
+                role="Backend Developer">
+            </user-card>
+
+            <user-card
+                name="Ross"
+                role="UI/UX Designer">
+            </user-card>
+
+        </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
