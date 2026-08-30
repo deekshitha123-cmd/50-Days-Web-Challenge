@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Day 43 - Global State Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container">
+
+            <p class="day-label">
+                DAY 43 / 50
+            </p>
+
+            <h1>
+                🌐 Global State Management
+            </h1>
+
+            <p class="subtitle">
+                The Publish-Subscribe Pattern
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+
+        <!-- Introduction -->
+        <section class="intro">
+
+            <span class="badge">
+                VANILLA JAVASCRIPT
+            </span>
+
+            <h2>
+                Centralized State Store
+            </h2>
+
+            <p>
+                Multiple components can share and react to
+                the same global state without directly
+                communicating with each other.
+            </p>
+
+        </section>
+
+
+        <!-- Global State Display -->
+        <section class="state-card">
+
+            <div class="section-title">
+
+                <span class="icon">🧠</span>
+
+                <div>
+                    <h2>Global State</h2>
+
+                    <p>
+                        Single source of truth
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="state-grid">
+
+                <div class="state-item">
+
+                    <span class="state-label">
+                        Cart Count
+                    </span>
+
+                    <span
+                        class="state-value"
+                        id="globalCartCount"
+                    >
+                        0
+                    </span>
+
+                </div>
+
+
+                <div class="state-item">
+
+                    <span class="state-label">
+                        User Theme
+                    </span>
+
+                    <span
+                        class="state-value"
+                        id="globalTheme"
+                    >
+                        light
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Components -->
+        <section class="components-section">
+
+            <h2 class="section-heading">
+                Connected Components
+            </h2>
+
+            <p class="section-description">
+                These independent components communicate
+                through the same global store.
+            </p>
+
+
+            <div class="components-grid">
+
+                <cart-component></cart-component>
+
+                <theme-component></theme-component>
+
+            </div>
+
+        </section>
+
+
+        <!-- How It Works -->
+        <section class="architecture">
+
+            <h2 class="section-heading">
+                🔄 How Pub/Sub Works
+            </h2>
+
+            <p class="section-description">
+                Components subscribe to the store and
+                automatically receive updates.
+            </p>
+
+
+            <div class="flow">
+
+                <div class="flow-item">
+
+                    <div class="flow-number">
+                        1
+                    </div>
+
+                    <div class="flow-content">
+
+                        <h3>
+                            Component
+                        </h3>
+
+                        <p>
+                            User performs an action
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <div class="flow-number">
+                        2
+                    </div>
+
+                    <div class="flow-content">
+
+                        <h3>
+                            setState()
+                        </h3>
+
+                        <p>
+                            Store receives new data
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <div class="flow-number">
+                        3
+                    </div>
+
+                    <div class="flow-content">
+
+                        <h3>
+                            Global Store
+                        </h3>
+
+                        <p>
+                            State is updated
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <div class="flow-number">
+                        4
+                    </div>
+
+                    <div class="flow-content">
+
+                        <h3>
+                            Subscribers
+                        </h3>
+
+                        <p>
+                            Listeners are notified
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <div class="flow-number">
+                        5
+                    </div>
+
+                    <div class="flow-content">
+
+                        <h3>
+                            UI Updates
+                        </h3>
+
+                        <p>
+                            Screen reacts automatically
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Concepts -->
+        <section class="concepts">
+
+            <h2 class="section-heading">
+                💡 Key Concepts
+            </h2>
+
+
+            <div class="concept-grid">
+
+                <div class="concept-card">
+
+                    <div class="concept-icon">
+                        🏪
+                    </div>
+
+                    <h3>
+                        Centralized State
+                    </h3>
+
+                    <p>
+                        One store maintains the shared
+                        application state.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-card">
+
+                    <div class="concept-icon">
+                        📢
+                    </div>
+
+                    <h3>
+                        Pub/Sub
+                    </h3>
+
+                    <p>
+                        Subscribers automatically receive
+                        state-change notifications.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-card">
+
+                    <div class="concept-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Reactivity
+                    </h3>
+
+                    <p>
+                        UI updates automatically when the
+                        global state changes.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-card">
+
+                    <div class="concept-icon">
+                        🧹
+                    </div>
+
+                    <h3>
+                        Unsubscribe
+                    </h3>
+
+                    <p>
+                        Listeners can be removed to prevent
+                        memory leaks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Code Concept -->
+        <section class="code-section">
+
+            <h2 class="section-heading">
+                🧩 The Core Idea
+            </h2>
+
+
+            <div class="code-box">
+
+                <pre><code>globalStore.setState({
+    cartCount: 5
+});</code></pre>
+
+            </div>
+
+
+            <p class="code-explanation">
+
+                Calling <strong>setState()</strong> updates
+                the centralized state and automatically
+                notifies every subscribed component.
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            Day 43 / 50 Web Development Challenge 🚀
+        </p>
+
+        <p>
+            Global State Management using Vanilla JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script
+        type="module"
+        src="js/main.js"
+    ></script>
+
+</body>
+
+</html>

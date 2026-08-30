@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #171717;
+
+    color: white;
+
+    padding: 50px 20px;
+
+    text-align: center;
+}
+
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.day-label {
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.7;
+
+    margin-bottom: 10px;
+}
+
+
+.header h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    font-size: 18px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    text-align: center;
+
+    padding: 50px 20px 35px;
+}
+
+
+.badge {
+    display: inline-block;
+
+    background: #e8e8e8;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+}
+
+
+.intro h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.intro p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+}
+
+
+/* =========================
+   GLOBAL STATE
+========================= */
+
+.state-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.07);
+
+    margin-bottom: 45px;
+}
+
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.section-title .icon {
+    font-size: 35px;
+}
+
+
+.section-title h2 {
+    font-size: 22px;
+}
+
+
+.section-title p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.state-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.state-item {
+    background: #f5f5f5;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.state-label {
+    color: #555;
+
+    font-weight: bold;
+}
+
+
+.state-value {
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   COMPONENTS
+========================= */
+
+.components-section {
+    margin-bottom: 50px;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+
+.section-description {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+.components-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   ARCHITECTURE
+========================= */
+
+.architecture {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.06);
+
+    margin-bottom: 50px;
+}
+
+
+.flow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.flow-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    background: #f5f5f5;
+
+    border-radius: 12px;
+
+    min-width: 145px;
+}
+
+
+.flow-number {
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #222;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+.flow-content h3 {
+    font-size: 15px;
+}
+
+
+.flow-content p {
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+.arrow {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONCEPTS
+========================= */
+
+.concepts {
+    margin-bottom: 50px;
+}
+
+
+.concept-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.concept-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.06);
+}
+
+
+.concept-icon {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.concept-card h3 {
+    margin-bottom: 8px;
+}
+
+
+.concept-card p {
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =========================
+   CODE
+========================= */
+
+.code-section {
+    margin-bottom: 50px;
+}
+
+
+.code-box {
+    background: #171717;
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    max-width: 600px;
+
+    margin: 25px auto;
+}
+
+
+.code-box pre {
+    overflow-x: auto;
+}
+
+
+.code-box code {
+    font-family:
+        Consolas,
+        monospace;
+
+    font-size: 15px;
+}
+
+
+.code-explanation {
+    text-align: center;
+
+    color: #666;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #171717;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+.footer p:first-child {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.footer p:last-child {
+    font-size: 13px;
+
+    opacity: 0.6;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .concept-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .components-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+
+    .state-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .flow {
+        flex-direction: column;
+    }
+
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+
+    .flow-item {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+}
