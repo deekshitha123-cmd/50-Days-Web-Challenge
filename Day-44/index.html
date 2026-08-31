@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Day 44 - Reactive Web Components
+    </title>
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <!-- Heading -->
+
+        <h1>
+            ⚡ Reactive Web Components
+        </h1>
+
+
+        <p class="subtitle">
+            Global State Management & Memory Management
+        </p>
+
+
+        <!-- Components -->
+
+        <div class="components">
+
+
+            <!-- Subscriber -->
+
+            <cart-counter></cart-counter>
+
+
+            <!-- Publishers -->
+
+            <product-button></product-button>
+
+            <product-button></product-button>
+
+            <product-button></product-button>
+
+
+        </div>
+
+
+        <!-- Explanation -->
+
+        <div class="info">
+
+            <p>
+                Click any <strong>Add to Cart</strong>
+                button.
+            </p>
+
+            <p>
+                The Cart Counter automatically updates
+                using the Global Store.
+            </p>
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="footer">
+
+            Day 44 / 50 Web Development Challenge
+
+        </div>
+
+
+    </div>
+
+
+    <!-- JavaScript Modules -->
+
+    <script
+        type="module"
+        src="./components/CartCounter.js"
+    ></script>
+
+
+    <script
+        type="module"
+        src="./components/ProductButton.js"
+    ></script>
+
+
+</body>
+
+</html>
